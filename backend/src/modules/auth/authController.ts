@@ -1,7 +1,7 @@
 import bcrypt from "bcryptjs";
 import express, { Request, Response } from "express";
 import jwt from "jsonwebtoken";
-import prisma from "../../libs/prisma.ts";
+import prisma from "src/libs/prisma.js";
 
 export const register = async (req: Request, res: Response) => {
   try {
